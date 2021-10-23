@@ -1,0 +1,66 @@
+body {
+	margin: 1px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	grid-template-areas: "item1 . item2 item2 item2";
+	grid-gap: 10%;
+}
+
+.item2 {
+	background: #826e25;
+	color: #f9f7f8;
+	text-align: center;
+	box-sizing: border-box;
+	border: 2px solid white;
+	border-left: 2px solid purple;
+}
+
+.item1 {
+	background: #826e25;
+	color: #f9f7f8;
+	border: 2px white solid;
+	text-align: center;
+}
+
+div#brooke {
+	border: 1px solid black;
+	border-bottom: 2px solid black;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+ul {
+	display: block;
+}
+
+li::before {
+	/* 	assign the li the font awesome icon class, use as image by double \\ */
+	content: "\\";
+	margin-left: -1em;
+	margin-right: 1em;
+}
+
+p#je::after {
+	content: " Jennifer Grace";
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.fa-joint {
+	color: pink;
+	margin-top: 2px;
+}
+
+p#brooke2 {
+	margin: 2% 2% 2% 2%;
+	border: 2px solid black;
+	border-bottom: 3px solid pink;
+	border-top: 2px dashed yellow;
+}
